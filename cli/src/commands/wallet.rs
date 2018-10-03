@@ -21,8 +21,6 @@ pub mod create_command {
                 .add_main_param("name", "The name of new wallet")
                 .add_required_param("pool_name", "The name of associated Indy pool")
                 .add_optional_deferred_param("key", "Auth key for the wallet")
-                .add_example("wallet create wallet1 pool_name=pool1")
-                .add_example("wallet create wallet1 pool_name=pool1 key")
                 .add_example("wallet create wallet1 pool_name=pool1 key=AAAAB3NzaC1yc2EA")
                 .finalize()
     );
